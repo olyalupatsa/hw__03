@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,93 +14,105 @@
 </head>
 <body>
     <!-- main header -->
-    <header>
-        <a class="logo"href="./index.html">Web<span class="logo-studio">Studio</span></a>
-        <nav>
-            <ul class="nav-list">
-                <li><a class="nav-items-active" href="./index.html">Studio</a></li>
-                <li><a class="nav-items" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="nav-items" href="">Contacts</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul class="adress-list">
-                <li><a class="adress-items" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="adress-items" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+    <header class="header">
+        <div class="header-container container">
+            <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+            <nav class="header-nav" >
+                <ul class="nav-list">
+                    <li><a class="nav-items-active" href="./index.html">Studio</a></li>
+                    <li><a class="nav-items" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-items" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address>
+                <ul class="adress-list">
+                    <li><a class="adress-items" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="adress-items" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
     <!-- hero image -->
     <section class="hero-img">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>
+        <div class="container hero-container">
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+            <button class="hero-button" type="button">Order Service</button>
+        </div>
     </section>
     <!-- section 1 -->
     <section>
-        <ul>
-            <li>
-                <h3 class="sct-subtitle">Strategy</h3> 
-                <p class="sct-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-            </li>
-            <li>
-                <h3 class="sct-subtitle">Punctuality</h3>
-                <p class="sct-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-            </li>
-            <li>
-                <h3 class="sct-subtitle">Diligence</h3>
-                <p class="sct-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-            </li>
-            <li>
-                <h3 class="sct-subtitle">Technologies</h3>
-                <p class="sct-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-            </li>
-        </ul>
+        <div class="container sct-container">
+            <ul class="sct-frs-list">
+                <li>
+                    <h3 class="sct-subtitle">Strategy</h3> 
+                    <p class="sct-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                </li>
+                <li>
+                    <h3 class="sct-subtitle">Punctuality</h3>
+                    <p class="sct-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                </li>
+                <li>
+                    <h3 class="sct-subtitle">Diligence</h3>
+                    <p class="sct-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                </li>
+                <li>
+                    <h3 class="sct-subtitle">Technologies</h3>
+                    <p class="sct-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <!-- section 2 -->
     <section>
         <h2 class="sct-title">What are we doing</h2>
-        <ul>
-            <li>
-                <img src="./images/section1/rectangle71-2.jpg" alt="computer websites" width="360" height="300">
-            </li>
-            <li>
-                <img src="./images/section1/rectangle71-1.jpg" alt="phone websites" width="360" height="300">
-            </li>
-            <li>
-                <img src="./images/section1/rectangle71.jpg" alt="computer&phone websites" width="360" height="300">
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="img-list">
+                <li>
+                    <img src="./images/section1/rectangle71-2.jpg" alt="computer websites" width="360" height="300">
+                </li>
+                <li>
+                    <img src="./images/section1/rectangle71-1.jpg" alt="phone websites" width="360" height="300">
+                </li>
+                <li>
+                    <img src="./images/section1/rectangle71.jpg" alt="computer&phone websites" width="360" height="300">
+                </li>
+            </ul>
+        </div>
     </section>
     <!-- section 3 -->
     <section class="sct-team">
-        <h2 class="sct-title">Our Team</h2>
-        <ul>
-            <li class="sct-list">
-                <img src="./images/team/img-3.jpg" alt="Mark Guerrero product designer" width="264" height="260">
-                <h3 class="sct-subtitle">Mark Guerrero</h3>
-                <p class="sct-text">Product Designer</p>
-            </li>
-            <li class="sct-list">
-                <img src="./images/team/img-2.jpg" alt="Tom Ford frontend developer" width="264" height="260">
-                <h3 class="sct-subtitle">Tom Ford</h3>
-                <p class="sct-text">Frontend Developer</p>
-            </li>
-            <li class="sct-list">
-                <img src="./images/team/img-1.jpg" alt="Camila Garcia marketing" width="264" height="260">
-                <h3 class="sct-subtitle">Camila Garcia</h3>
-                <p class="sct-text">Marketing</p>
-            </li>
-            <li class="sct-list">
-                <img src="./images/team/img.jpg" alt="Daniel Wilson UI designer" width="264" height="260">
-                <h3 class="sct-subtitle">Daniel Wilson</h3>
-                <p class="sct-text">UI Designer</p>
-            </li>
-        </ul>
+        <h2 class="sct-title-team">Our Team</h2>
+        <div class="container"> 
+            <ul class="sct-list">
+                <li class="sct-items">
+                    <img src="./images/team/img-3.jpg" alt="Mark Guerrero product designer" width="264" height="260">
+                    <h3 class="sct-subtitle-team">Mark Guerrero</h3>
+                    <p class="sct-text">Product Designer</p>
+                </li>
+                <li class="sct-items">
+                    <img src="./images/team/img-2.jpg" alt="Tom Ford frontend developer" width="264" height="260">
+                    <h3 class="sct-subtitle-team">Tom Ford</h3>
+                    <p class="sct-text">Frontend Developer</p>
+                </li>
+                <li class="sct-items">
+                    <img src="./images/team/img-1.jpg" alt="Camila Garcia marketing" width="264" height="260">
+                    <h3 class="sct-subtitle-team">Camila Garcia</h3>
+                    <p class="sct-text">Marketing</p>
+                </li>
+                <li class="sct-items">
+                    <img src="./images/team/img.jpg" alt="Daniel Wilson UI designer" width="264" height="260">
+                    <h3 class="sct-subtitle-team">Daniel Wilson</h3>
+                    <p class="sct-text">UI Designer</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <!-- fotter -->
     <footer class="ftr">
-        <a class="ftr-logo" href="./index.html">Web<span class="ftr-logo-studio">Studio</span></a>
-        <p class="ftr-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        <div class="container footer-container"> 
+            <a class="ftr-logo" href="./index.html">Web<span class="ftr-logo-studio">Studio</span></a>
+            <p class="ftr-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        </div>
     </footer>
 </body>
 </html>

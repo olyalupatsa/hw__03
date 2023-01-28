@@ -10,10 +10,19 @@
     --modal-overlay: #2E2F42;
     --hero-background: #2E2F42;
     --white: #ffffff;
+
+    --main-font: 'Roboto', sans-serif;
+    --scnd-font: 'Raleway', sans-serif;
+
+    --items: 3;
+    --indent: 24px;
+    --indent-scnd: 48px;
+
 }
+
 body {
     background-color: var(--background);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     letter-spacing: 0.02em;
     color: var(--dark)
 }
@@ -23,22 +32,88 @@ ul {
 a {
     text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+button {
+    cursor: pointer;
+}
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* reset end */
+.about,
+.price,
+.benefits,
+.team,
+.gallery,
+.contacts,
+.booking {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 /* main header */
+.header {
+    border-bottom: 1px solid var(--accent);
+}
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+
+}
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--scnd-font);
     font-size: 18px;
     line-height: calc(24/18);
     font-weight: 800;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand);
+    margin-right: 76px;
 }
 .logo-studio {
     color: var(--dark);
 }
+
+.header-nav {
+    margin-right: auto;
+}
 .nav-list {
     line-height: calc(24/16);
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
 }
 .nav-items {
     color: var(--dark);
@@ -62,6 +137,10 @@ a {
 .adress-list {
     font-style: normal;
     line-height: calc(24/16);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
 }
 .adress-items {
     color: var(--text);
@@ -72,22 +151,45 @@ a {
 .adress-items:focus {
     color: var(--pressed-state);
 }
+.logo,
+.nav-items,
+.nav-items-active,
+.adress-items {
+    display: block;   
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
 /* hero image */
 .hero-img {
     background-color: var(--hero-background);
+    min-width: 1440px;
+    min-height: 600px;  
+}
+.hero-container {
+    width: 494px;
 }
 .hero-title {
     color: var(--white);
     font-size: 56px;
     line-height: calc(60/50);
     font-weight: 700;
+    padding-top: 188px;
+    text-align: center;
+    max-width: 494px;
 }
 .hero-button {
     background: var(--primary-brand);
     color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer;
+    border: 1px solid var(--primary-brand);
+    font-family: var(--main-font);
+    letter-spacing: 0.04em;
+    margin-top: 46px;
+    padding: 16px 32px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 .hero-button:hover {
     background: var(--pressed-state);
@@ -95,32 +197,93 @@ a {
 .hero-button:active {
     background-color: var(--pressed-state);
 }
+
+/* section-1 */
+.sct-container {
+    margin-top: 120px;
+
+}
+.sct-frs-list {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--indent);
+    margin: 0;
+    padding: 0;
+}
 .sct-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
+    margin-bottom: 8px;
+    min-width: 264px;
 }
 .sct-text { 
     line-height: calc(24/16);
     color: var(--text);
+    padding-bottom: 32px;
 }
+
+/* section-2 */
 .sct-title {
     font-size: 36px;
     line-height: calc(40/36);
     text-align: center;
     text-transform: capitalize;
+    margin-top: 120px;
+    margin-bottom: 72px;
 }
+.img-list {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--indent);
+    margin: 0;
+    padding: 0;
+}
+
+/* section-3 */
 .sct-team {
     background: var(--light);
+    min-height: 732px;
 }
+.sct-title-team {
+    font-size: 36px;
+    line-height: calc(40/36);
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 120px;
+    margin-bottom: 72px;
+    padding-top: 120px;
+}
+
 .sct-list {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--indent);
+    margin: 0;
+    padding: 0;
+    
+}
+.sct-items {
     background: var(--white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    text-align: center;
 }
+.sct-subtitle-team{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    margin-top: 32px;
+    padding-bottom: 8px;
+}
+
 /* footer */
 .ftr {
     background: var(--hero-background);
+    min-height: 310px; 
+}
+.footer-container {
+    padding-top: 100px;
 }
 .ftr-logo {
     font-family: 'Raleway', sans-serif;
@@ -130,6 +293,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand);
+    
 }
 .ftr-logo-studio {
     color: var(--white);
@@ -137,20 +301,31 @@ a {
 .ftr-text {
     line-height: calc(24/16);
     color: var(--accent);
-    }
-
-
+    width: 264px;
+    padding-top: 16px;
+}
 
 
 /* PORTFOLIO */
 /* filter */
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    gap: var(--indent);
+    margin: 96px 0px 0px 0px;
+    padding: 0;
+}
 .filter-btn {
     background: var(--light);
     border: 1px solid var(--accent);
     border-radius: 4px;
     letter-spacing: 0.04em;
     color: var(--primary-brand);
-    cursor: pointer;
+    font-family: var(--main-font);
+    padding: 12px 24px;
+    
 }
 .filter-btn:hover {
     background: var(--pressed-state);
@@ -159,6 +334,19 @@ a {
 .filter-btn:focus {
     background: var(--pressed-state);
     color: var(--white);
+}
+.filter-container {
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+
+.row-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--indent-scnd) var(--indent);
+    margin: 0;
+    padding: 0;
 }
 
 .row-items {
@@ -170,9 +358,14 @@ a {
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
+    margin-top: 32px;
+    padding-bottom: 8px;
+    margin-left: 12px;
 }
 
 .row-text {
     line-height: calc(24/16);
     color: var(--text);
+    padding-bottom: 32px;
+    margin-left: 12px;
 }
