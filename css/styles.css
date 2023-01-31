@@ -83,8 +83,8 @@ button {
 }
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -206,20 +206,19 @@ button {
 }
 
 /* section-1 */
-.sct-container {
+.sct-frst {
     padding-top: 120px;
-
 }
+
 .sct-frs-list {
     display: flex;
     align-items: flex-start;
-    gap: 22px;
+    gap: 24px;
     margin: 0;
     padding: 0;
 }
 .sct-frs-items {
     flex-basis: calc(100%-var(--indent)*(var(--items)-1))/var(--items);
-    padding-top: 120px;
 }
 .sct-subtitle {
     font-weight: 500;
@@ -254,7 +253,7 @@ button {
     gap: var(--indent);
     margin: 0;
     padding: 0;
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 /* section-3 */
@@ -293,7 +292,7 @@ button {
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
-    margin-bottom: 8px;
+    padding-bottom: 8px;
     padding-top: 32px;
 }
 
@@ -326,20 +325,27 @@ button {
     line-height: calc(24/16);
     color: var(--accent);
     width: 264px;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 
 /* PORTFOLIO */
 /* filter */
+
+.filter-sct{
+    padding-top: 96px;
+    padding-bottom: 120px;
+    
+}
 .filter-list {
     display: flex;
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
     gap: var(--indent);
-    margin: 96px 0px 0px 0px;
+    /* padding-top: 96px; */
     padding: 0;
+   
 }
 .filter-btn {
     background: var(--light);
@@ -359,10 +365,10 @@ button {
     background: var(--pressed-state);
     color: var(--white);
 }
-.filter-container {
+/* .filter-container {
     margin-top: 72px;
     margin-bottom: 120px;
-}
+} */
 
 .row-list {
     display: flex;
@@ -370,11 +376,13 @@ button {
     flex-wrap: wrap;
     gap: var(--indent-scnd) var(--indent);
     margin: 0;
-    padding: 0;
+    padding-top: 72px;
+    
 }
 
 .row-items {
-    flex-basis: calc(100%-var(--indent)*(var(--items)-1)/var(--items));
+    border: 1px solid var(--accent);
+    /* flex-basis: calc(100%-var(--indent)*(var(--items)-1)/var(--items)); */
 }
 
 .row-subtitle {
@@ -384,6 +392,7 @@ button {
     margin-top: 32px;
     padding-bottom: 8px;
     margin-left: 12px;
+    
 }
 
 .row-text {
